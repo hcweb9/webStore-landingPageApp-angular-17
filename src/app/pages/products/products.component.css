@@ -1,0 +1,11 @@
+.product-preview {
+    width: 200px; 
+    height: 250px; 
+    display: inline-block; 
+    margin: 10px; 
+    border: 1px solid #ddd; 
+}
+
+th{
+    margin: 0 10px; 
+}
