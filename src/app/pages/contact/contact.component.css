@@ -1,6 +1,33 @@
+.container {
+  margin-top: 30px; /* Adjust this value to control the distance from the navbar */
+  padding-bottom: 350px;
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
 
+.message-window {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  /*Positionabsolutelyforcentering*/top: 50%;
+  /*Centervertically*/left: 50%;
+  /*Centerhorizontally*/transform: translate(-50%, -50%);
+  /*Adjustpositioningasneeded*/color: #1c7549;
+  display: block;
+  background-color: black;
+  /*border: 1px solid #1c7549;*/
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  z-index: 10;
+  align-items: center;
+  margin-top: 150px;
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out;
+}
 
-.container{
-    margin-top: 20px;
-    padding-bottom: 350px;
+.message-window p{
+  margin: 0 auto;
 }

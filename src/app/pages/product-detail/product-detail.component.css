@@ -2,3 +2,30 @@
     display: flex;
     justify-content: center;
 }
+
+.back-button {
+    /* Position the button at the bottom left corner */
+    position: fixed;
+    left: 10px; /* Adjust horizontal position from left edge */
+    bottom: 10px; /* Adjust vertical position from bottom edge */
+  
+    /* Set button dimensions */
+    width: 100px;
+    height: 30px;
+  
+    /* Make the button transparent with a slight border */
+    background-color: transparent;
+    border: 1px solid #0d6efd; /* Adjust border color */
+    border-radius: 5px; /* Add rounded corners */
+  
+    /* Style the text */
+    color: #0d6efd; /* Set text color (a light gray) */
+    font-weight: bold; /* Make the text bolder */
+    text-transform: uppercase; /* Convert text to uppercase */
+    cursor: pointer; /* Indicate clickable behavior */
+  
+    /* Add a hover effect for slight visual feedback */
+    &:hover {
+      background-color:whitesmoke; /* Add a slight background on hover */
+    }
+  }

@@ -3,6 +3,7 @@
     [formGroup]="contactForm"
     class="row g-3, container"
     (submit)="send($event)"
+    (keydown.enter)="send($event)"
   >
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label"
@@ -51,4 +52,7 @@
       <button class="btn btn-primary" type="submit">Submit</button>
     </div>
   </form>
+  <div *ngIf="isMessageSubmitted" class="message-window">
+    <p>Message submitted!</p>
+  </div>
 </div>

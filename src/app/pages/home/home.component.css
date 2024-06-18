@@ -1,11 +1,42 @@
-.container{
-    display: grid;
-    justify-items: center;
+body {
+  /* Set background color */
+  background-color: #212121; /* Dark gray base */
+  color: #fff; /* White text color */
+  font-family: sans-serif; /* Basic sans-serif font */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
 
-img{
-    width: 75%;
-    height: 75%;
-    object-fit: cover;
-    border: 2px solid #dfcfcf;
+.container {
+  /* Center the content horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Set minimum height for full viewport */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.container h1,
+.container h2,
+.container h3 {
+  /* Style headings */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container h1 {
+  /* Increase font size for title */
+  font-size: 2.5rem;
+}
+
+.container h2 {
+  /* Adjust font size for subtitle */
+  font-size: 1.8rem;
+}
+
+.container img {
+  /* Adjust image position and size */
+  margin-top: 50px; /* Add some space from the text */
+  width: 50%;
+  max-width: 500px; /* Set a maximum width for responsiveness */
 }
